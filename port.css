@@ -154,18 +154,27 @@ a{
     align-items: center;
     text-align: center;
     background: rgb(0, 0, 0);
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 #p1{
     background: url("to-do-list.PNG");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 #p2{
     background: url("student\ enrol.PNG");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 #p3{
     color: black;
@@ -173,6 +182,12 @@ a{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+#p3 a{
+    color: black;
 }
 #p1:hover{
     /* font-display: none; */
@@ -192,8 +207,25 @@ a{
     transform: scale(1.25);
     
 }
-
-
+.res-head h3{
+    cursor: pointer;
+    text-align: center;
+}
+.res-body h3 a{
+    padding: 10px;
+    background-color:rgb(16, 84, 201);
+    border-radius: 10px;
+}
+.res-body{
+    /* margin: auto; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.res-body img{
+    margin: auto;
+}
 .contact{
     /* border: 2px solid red; */
     /* height: 60vh; */
@@ -257,4 +289,7 @@ button[type="submit"]{
     color: white;
     font-size: 20px;
     background: linear-gradient(#B718DF,#2E0854);
+}
+.link{
+    align-items: end;
 }
